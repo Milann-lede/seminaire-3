@@ -1,62 +1,44 @@
-# Seminaire-3 — Site web
+# séminaire-3
 
 Description
-- Site statique/dynamique pour le séminaire 3. Contient pages, ressources et styles pour présenter le contenu du cours.
+- README généré pour décrire le contenu et l'utilisation du dossier `seminaire-3`.
+- Remplacez les sections ci‑dessous par le contenu réel des fichiers du dossier.
 
-Fonctionnalités
-- Pages de présentation (accueil, programme, intervenants)
-- Contenu responsive pour mobile et bureau
-- Déploiement facile (Netlify / Vercel / GitHub Pages)
+Structure (exemple — à remplacer)
+```
+seminaire-3/
+├─ README.md
+├─ index.html
+├─ .gitignore
+│  
+├─ assets/
+│  └─ image/
+│     └─ Photo de profil copie.jpeg
+└─style
+  └─style.css 
 
-Technologies (exemples)
-- HTML, CSS, JavaScript
-- Optionnel : framework (React / Vue / Svelte) ou générateur statique (Hugo / Eleventy)
+
 
 Installation
-1. Cloner le dépôt  
-    git clone <url-du-repo>
-2. Se placer dans le dossier  
-    cd seminaire-3
-3. Installer les dépendances (si projet Node)  
-    npm install
-    ou
-    yarn
+- Cloner le dépôt ou copier le dossier `seminaire-3` localement.
 
-Développement
-- Lancer le serveur de développement  
-  npm run dev
-  ou
-  yarn dev
+Usage
+- Lire les énoncés dans les fichiers `exercice-*`.
+- Exécuter les scripts Python : `python3 exercice-*/solution.py`.
+- Ouvrir les fichiers HTML/MD dans un navigateur/éditeur pour consulter le contenu.
 
-Production
-- Construire le site  
-  npm run build
-  ou
-  yarn build
-- Servir la version de production (ou déployer le dossier `dist` / `build`)
-
-Structure recommandée
-- public/ — assets publics (images, favicons)
-- src/ — code source (pages, composants, styles)
-- dist/ ou build/ — sortie de production
-- README.md — ce fichier
-- package.json — scripts & dépendances (si Node)
-
-Personnalisation rapide
-- Modifier le titre et la meta-description dans `public/index.html` ou le fichier de layout.
-- Mettre à jour le contenu des pages dans `src/pages` ou les fichiers Markdown selon le setup.
+Contenu des fichiers
+- Ajoutez ici une brève description pour chaque fichier du dossier, par exemple :
+  - `exercice-1.md` — énoncé du premier exercice.
+  - `exercice-2/solution.py` — script de la solution.
 
 Contribuer
-- Ouvrir une issue pour signaler un bug ou proposer une amélioration.
-- Soumettre une PR avec une description claire et tests si nécessaire.
+- Fork → modifier → PR.
+- Respecter le style du projet et ajouter des tests si nécessaire.
 
 Licence
-- MIT — voir fichier LICENSE
+- Indiquez la licence choisie (ex : MIT, CC-BY, etc.).
 
-Auteur / Contact
-- Nom: [Votre nom]
-- Email: [votre.email@example.com]
-
-Notes
-- Adapter les commandes et la structure selon le framework utilisé.
-- Pour aide spécifique (framework, déploiement), donner le stack utilisé.
+Besoin que je complète ce README automatiquement ?
+- Collez la sortie de `ls -la seminaire-3` ou la liste des fichiers présents, ou
+- Autorisez-moi à lire la liste des fichiers (copiez ici le contenu du dossier) pour générer un README final détaillé.

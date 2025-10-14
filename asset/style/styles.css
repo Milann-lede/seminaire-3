@@ -384,4 +384,26 @@ input:focus, textarea:focus{
   .card-3d{
     height:250px
   }
+
+  .logo-tech {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-tech:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.logo-tech-html {
+  width: 97px;
+  height: 97px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-tech-html:hover {
+  transform: scale(1.2) rotate(5deg);
+}
 }

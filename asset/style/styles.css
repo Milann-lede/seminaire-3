@@ -1,0 +1,36 @@
+h1 {
+    color: rgb(13, 0, 255);
+}
+
+li {
+    color: rgb(0, 102, 255);
+}
+
+#PhraseIntro {
+    color: rgb(17, 0, 255);
+}
+
+.paragraphe {
+    background-color: rgba(16, 0, 237, 0.609);
+    width: 50%;
+}
+
+.photo {
+    float: right;
+    width: 150px; /* Définissez une largeur */
+    height: 150px; /* et une hauteur identiques pour un cercle parfait */
+    object-fit: cover; /* Assure que l'image remplit bien le cercle sans être déformée */
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajoute une petite ombre pour un meilleur rendu */
+}
+
+tr:nth-last-of-type(even) {
+    background-color: rgb(27, 127, 155);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: row;
+}

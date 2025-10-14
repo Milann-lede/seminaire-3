@@ -4,7 +4,7 @@ Description
 - README généré pour décrire le contenu et l'utilisation du dossier `seminaire-3`.
 - Remplacez les sections ci‑dessous par le contenu réel des fichiers du dossier.
 
-Structure (exemple — à remplacer)
+Structure 
 ```
 seminaire-3/
 ├─ README.md
@@ -16,7 +16,7 @@ seminaire-3/
 │     └─ Photo de profil copie.jpeg
 └─style
   └─style.css 
-
+```
 
 
 Installation

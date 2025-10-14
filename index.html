@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon premier site</title>
-    <link rel="stylesheet" href="/asset/style/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Milann</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/asset/style/styles.css" />
 </head>
-<body class="background-demo"> <img class="photo" src="/asset/image/Photo de profil copie.jpeg" alt="photo moi" width="200">
+<body>
 
-    <h1>LEDE Milann</h1>
-    <h2 id="PhraseIntro">Découvrez mon profil de développeur</h2>
-    <div class="container">
-        <div class="paragraphe">
-            <p>Je suis étudiant en première année</p>
-            <p>Je suis le deuxième paragraphe</p>
-            <h3>Mes compétences</h3>
-            
-            <nav class="glass-nav">
-                <ul>
-                    <li>
-                        <i class="fab fa-html5"></i> <span>HTML</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-css3-alt"></i> <span>CSS</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-js-square"></i> <span>JavaScript</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-pencil-ruler"></i> <span>UX</span>
-                    </li>
-                </ul>
-            </nav>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#hero" class="logo">Mon<span>Portfolio</span></a>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Prénom</th>
-                        <th>Nom</th>
-                        <th>Ville</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Luna</td>
-                        <td>Rival</td>
-                        <td>lille</td>
-                    </tr>
-                    <tr>
-                        <td>Véronique</td>
-                        <td>Lefay</td>
-                        <td>paris</td>
-                    </tr>
-                    <tr>
-                        <td>khala</td>
-                        <td>Miter</td>
-                        <td>lyon</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="paragraphe">
-            <p>Je suis étudiant en première année</p>
-            <p>Je suis le deuxième paragraphe</p>
-            <h3>Mes compétences</h3>
-            
-            <nav class="glass-nav">
-                <ul>
-                    <li>
-                        <i class="fab fa-html5"></i> <span>HTML</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-css3-alt"></i> <span>CSS</span>
-                    </li>
-                    <li>
-                        <i class="fab fa-js-square"></i> <span>JavaScript</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-pencil-ruler"></i> <span>UX</span>
-                    </li>
-                </ul>
-            </nav>
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav-link">Accueil</a>
+        <a href="#projects" class="nav-link">Projets</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Prénom</th>
-                        <th>Nom</th>
-                        <th>Ville</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Jean</td>
-                        <td>Dupont</td>
-                        <td>Paris</td>
-                    </tr>
-                    <tr>
-                        <td>Marie</td>
-                        <td>Martin</td>
-                        <td>Lyon</td>
-                    </tr>
-                    <tr>
-                        <td>Pierre</td>
-                        <td>Durand</td>
-                        <td>Lille</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <!-- Photo de profil -->
+      <div class="profile-pic-wrap">
+        <img src="/asset/image/Photo de profil.jpeg" alt="Photo de Milann" class="profile-pic">
+      </div>
+
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    
-    
-        <a href="https://www.linkedin.com/in/milann-lede/" alt="mon Linkedin">Mon LinkedIn</a>    
+  </header>
+
+  <section id="hero" class="hero section">
+    <div class="container grid-2">
+      <div class="hero-copy">
+        <h1 class="title">Salut, moi c’est <span class="gradient">Milann</span><br>Développeur Web</h1>
+        <p class="lead">
+          Je crée des sites modernes, esthétiques et performants en <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">Voir mes projets</a>
+          <a href="#contact" class="btn primary">Demander un site</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="card-3d reveal">
+          <div class="card-3d__inner">
+            <div class="dots"></div>
+            <div class="lines"></div>
+            <div class="glow"></div>
+            <p class="titre-heder">Spécialisé en</p>
+
+            <!-- Logos HTML / CSS / JS -->
+            <div class="tech-logos">
+              <img src="/asset/image/html-logo.png" alt="Logo HTML" class="logo-tech-html">
+              <img src="/asset/image/css-logo.png" alt="Logo CSS" class="logo-tech">
+              <img src="/asset/image/js-logo.png" alt="Logo JavaScript" class="logo-tech">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projets <span class="gradient">récents</span></h2>
+      <p class="section-subtitle">Cliquée sur une carte pour ouvrir le site dans un nouvel onglet.</p>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="contact-info">
+        <h2 class="section-title">Me <span class="gradient">contacter</span></h2>
+        <ul class="coords">
+          <li><strong>Email :</strong> <a href="mailto:Milann.lede@icloud.com">Milann.lede@icloud.com</a></li>
+          <li><strong>Téléphone :</strong> <a href="tel:+330749522451">+33 07 49 52 24 51</a></li>
+          <li><strong>GitHub :</strong> <a href="https://github.com/Milann-lede" target="_blank">github.com/Milann-lede</a></li>
+          <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/milann-lede/" target="_blank">https://www.linkedin.com/in/milann-lede/</a></li>
+        </ul>
+      </div>
+
+      <!-- Formulaire -->
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button class="btn primary" type="submit">Envoyer</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 — Portfolio de Milann</p>
+    </div>
+  </footer>
+
+  <script src="#"></script>
 </body>
 </html>

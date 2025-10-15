@@ -105,6 +105,17 @@ body{
   transform: scale(1.2) rotate(5deg);
 }
 
+.logo-tech-html {
+  width: 6.0625rem;
+  height: 6.0625rem;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-tech-html:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
 .titre-heder {
   position: absolute;
   top: 1rem;

@@ -354,14 +354,22 @@ input:focus, textarea:focus{
 }
 
 .profile-pic-wrap {
+  display: flex;
+  align-items: center;
   margin-left: 1rem;
 }
+
 .profile-pic {
-  width:2.5rem;
-  height:2.5rem;
-  border-radius:50%; 
-  object-fit:cover; 
-  border:2px solid #d16ba5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d16ba5;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
 }
 
 .btn.primary-dons{

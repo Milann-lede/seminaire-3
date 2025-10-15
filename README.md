@@ -29,7 +29,19 @@ seminaire-3/
 │  
 ├─ assets/
 │  └─ image/
-│     └─ Photo de profil copie.jpeg
+│     ├─Photo de profil copie.jpeg
+│     ├─ css-logo.png
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     ├─ 
+│     └─
+│
+│
 └─style
   └─style.css 
 ```

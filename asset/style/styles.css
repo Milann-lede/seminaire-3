@@ -7,7 +7,7 @@
   --card:#151823;
   --accent-start:#ff62c0;
   --accent-end:#7a5cff;
-  --radius:0.75rem;
+  --radius:1.75rem;
 }
 
 *{
@@ -20,6 +20,19 @@ body{
   background: var(--bg);
   line-height:1.6;
   scroll-behavior: smooth;
+}
+
+.no-style-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+}
+
+.no-style-link:hover,
+.no-style-link:focus,
+.no-style-link:active {
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 .container{
@@ -191,6 +204,16 @@ body{
 .btn.primary:hover{
   transform:translateY(-0.125rem);
   box-shadow: 0 10px 20px rgba(255, 98, 192, 0.3);
+}
+
+#formulaire-code .card {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Animation reveal */

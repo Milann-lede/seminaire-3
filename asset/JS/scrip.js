@@ -1,17 +1,4 @@
-// ====== Menu burger (mobile) ======
-const burger = document.getElementById('burger');
-const nav = document.getElementById('nav');
 
-burger.addEventListener('click', () => {
-    const expanded = burger.getAttribute('aria-expanded') === 'true';
-    burger.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('active');
-});
-
-nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    burger.setAttribute('aria-expanded','false');
-    nav.classList.remove('active');
-}));
 
 // ====== Reveal on scroll ======
 const io = new IntersectionObserver((entries) => {

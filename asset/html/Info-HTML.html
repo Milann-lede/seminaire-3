@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Info — html</title>
+    <title>Info — HTML</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,6 @@
                 <a href="/asset/image/milann lede CV 2024.pdf" download="CV_Milann.pdf" target="_blank">
                     <img src="/asset/image/Photo de profil.jpeg" alt="Photo de Milann" class="profile-pic">
                 </a>
-
             </div>
 
             <button class="burger" id="burger" aria-label="Ouvrir le menu">
@@ -42,15 +41,16 @@
     </header>
 
     <section id="hero" class="hero section">
-        <br>
         <div class="container grid-2">
             <div class="hero-copy">
-                <h1 class="title">Salut, moi c'est <span class="gradient">Milann</span><br>Développeur Web</h1>
+                <h1 class="title">Tout savoir sur <span class="gradient">HTML</span><br>Le langage du web</h1>
                 <p class="lead">
-                    Je crée des sites modernes, esthétiques et performants en <strong>HTML</strong>,
-                    <strong>CSS</strong> et
-                    <strong>JavaScript</strong>.
+                    Découvrez les bases, les bonnes pratiques et les fonctionnalités avancées du <strong>HTML</strong>,
+                    le langage fondamental de tout site web.
                 </p>
+                <div class="cta">
+                    <a href="#introduction" class="btn primary">Commencer</a>
+                </div>
             </div>
             <div class="hero-art">
                 <div class="card-3d reveal">
@@ -58,7 +58,7 @@
                         <div class="dots"></div>
                         <div class="lines"></div>
                         <div class="glow"></div>
-                        <p class="titre-heder">Spécialisé en</p>
+                        <p class="titre-heder">Langages Web</p>
 
                         <!-- Logos HTML / CSS / JS -->
                         <div class="tech-logos">
@@ -66,10 +66,10 @@
                                 <img src="/asset/image/html-logo.png" alt="Logo HTML" class="logo-tech-html">
                             </a>
                             <a href="/asset/html/Info-HTML.html" rel="noopener">
-                                <img src="/asset/image/css-logo.png" alt="Logo HTML" class="logo-tech">
+                                <img src="/asset/image/css-logo.png" alt="Logo CSS" class="logo-tech">
                             </a>
                             <a href="/asset/html/Info-HTML.html" rel="noopener">
-                                <img src="/asset/image/js-logo.png" alt="Logo HTML" class="logo-tech">
+                                <img src="/asset/image/js-logo.png" alt="Logo JavaScript" class="logo-tech">
                             </a>
                         </div>
                     </div>
@@ -78,17 +78,130 @@
         </div>
     </section>
 
+    <!-- Contenu principal -->
+    <main class="container">
+        <!-- Introduction -->
+        <section id="introduction" class="section">
+            <h2 class="section-title">Qu'est-ce que le HTML ?</h2>
+            <p class="section-subtitle">Le langage de balisage hypertexte</p>
+
+            <p>Le <strong>HTML (HyperText Markup Language)</strong> est le langage de balisage standard utilisé
+                pour créer des pages web. Il décrit la structure d'une page web et permet d'intégrer du contenu
+                comme du texte, des images, des vidéos et des liens hypertextes.</p>
+
+<br>
+
+            <h3>Structure de base d'un document HTML</h3>
+
+<br>
+
+            <div class="card">
+                <div class="content">
+                    <pre><code> <!-- préformaté + Computer Operations Displayed Exactly (code) -->&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Titre de la page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Mon titre principal&lt;/h1&gt;
+    &lt;p&gt;Un paragraphe de texte.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Éléments HTML -->
+        <section id="elements" class="section">
+            <h2 class="section-title">Les éléments HTML essentiels</h2>
+            <p class="section-subtitle">Les balises fondamentales pour structurer votre contenu</p>
+
+            <div class="projects-grid">
+                <div class="card">
+                    <div class="content">
+                        <h3>Balises de titre</h3>
+                        <p>Les balises &lt;h1&gt; à &lt;h6&gt; définissent les titres et sous-titres, avec &lt;h1&gt;
+                            étant le plus important.</p>
+                        <div class="actions">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <h3>Paragraphes et texte</h3>
+                        <p>La balise &lt;p&gt; pour les paragraphes, &lt;strong&gt; pour le texte important, &lt;em&gt;
+                            pour le texte en emphase.</p>
+                        <div class="actions">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <h3>Liens et images</h3>
+                        <p>&lt;a&gt; pour les liens hypertextes, &lt;img&gt; pour intégrer des images avec l'attribut
+                            src.</p>
+                        <div class="actions">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <h3>Listes</h3>
+                        <p>&lt;ul&gt; pour les listes non ordonnées, &lt;ol&gt; pour les listes ordonnées, &lt;li&gt;
+                            pour les éléments de liste.</p>
+                        <div class="actions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML5 Sémantique -->
+        <section id="semantic" class="section">
+            <h2 class="section-title">HTML5 Sémantique</h2>
+            <p class="section-subtitle">Donnez du sens à votre structure</p>
+
+            <p>HTML5 a introduit des balises sémantiques qui décrivent plus précisément le contenu qu'elles
+                entourent, améliorant l'accessibilité et le référencement.</p>
+
+            <h3>Balises sémantiques principales</h3>
+
+            <div class="card">
+                <div class="content">
+
+                    <ul>
+                        <li><strong>&lt;header&gt;</strong> : En-tête de page ou de section</li>
+                        <li><strong>&lt;nav&gt;</strong> : Section de navigation</li>
+                        <li><strong>&lt;main&gt;</strong> : Contenu principal de la page</li>
+                        <li><strong>&lt;article&gt;</strong> : Contenu autonome et indépendant</li>
+                        <li><strong>&lt;section&gt;</strong> : Section thématique de contenu</li>
+                        <li><strong>&lt;aside&gt;</strong> : Contenu complémentaire</li>
+                        <li><strong>&lt;footer&gt;</strong> : Pied de page ou de section</li>
+                    </ul>
+
+                </div>
+            </div>
+            <p>L'utilisation de ces balises aide les moteurs de recherche et les technologies d'assistance à
+                mieux comprendre la structure de votre page.</p>
+        </section>
 
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 — Portfolio de Milann</p>
+            <p>© 2025 — Portfolio de Milann 
+            </p>
         </div>
     </footer>
 
     <!-- Script pour le menu burger -->
     <script src="/asset/JS/scrip.js"></script>
+
 
 </body>
 

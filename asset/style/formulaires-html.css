@@ -7,7 +7,7 @@
   --card:#151823;
   --accent-start:#ff62c0;
   --accent-end:#7a5cff;
-  --radius:1.75rem;
+  --radius:0.75rem;
 }
 
 *{
@@ -193,16 +193,6 @@ body{
   box-shadow: 0 10px 20px rgba(255, 98, 192, 0.3);
 }
 
-#formulaire-code .card {
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
 /* Animation reveal */
 .card {
   opacity: 0;
@@ -249,6 +239,32 @@ body{
               radial-gradient(23.75rem 12.5rem at 90% 80%, rgba(122,92,255,.35), transparent 60%);
   filter: blur(0.75rem);
 }
+
+/* Styles pour les boutons du formulaire */
+.form-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.btn.form-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    min-height: auto;
+}
+
+.btn.reset {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.12);
+    color: var(--text);
+}
+
+.btn.reset:hover {
+    background: rgba(255,255,255,.05);
+    transform: translateY(-0.125rem);
+}
+
 @keyframes drift{
   from{transform:translate3d(0,0,0);} 
   to{transform:translate3d(3.75rem,1.875rem,0);}
@@ -330,7 +346,7 @@ body{
 label{
   font-weight:600;
 }
-input, textarea{
+input, textarea, select{
   padding:0.75rem;
   border-radius:0.5rem;
   border:1px solid rgba(255,255,255,.12);
@@ -340,7 +356,7 @@ input, textarea{
   font-family:inherit;
   transition: border-color 0.3s;
 }
-input:focus, textarea:focus{
+input:focus, textarea:focus, select:focus{
   border-color:var(--accent-end);
 }
 
@@ -390,6 +406,77 @@ input:focus, textarea:focus{
   background:linear-gradient(135deg,var(--accent-start),var(--accent-end));
   color:#0b0b0f; 
   font-weight:700;
+}
+
+/* Styles spécifiques pour la page formulaires */
+.code-example {
+  background: #1a1d29;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.code-example code {
+  color: #eef2f7;
+  font-family: 'Courier New', monospace;
+}
+
+.form-demo {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.radio-group label, .checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+}
+
+.titre-heder {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2;
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  text-align: center;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn.reset {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.12);
+  color: var(--text);
+  padding: 0.75rem 1.25rem;
+}
+
+.btn.reset:hover {
+  background: rgba(255,255,255,.05);
+  transform: translateY(-0.125rem);
 }
 
 @media (max-width: 48rem){

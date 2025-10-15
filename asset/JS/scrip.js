@@ -70,3 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+// Rendre toutes les cartes visibles une fois le DOM chargé (au cas où IntersectionObserver ne fonctionne pas)
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => card.classList.add('visible'));
+});

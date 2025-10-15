@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="asset/style/Info-HTML.css"/>
+    <link rel="stylesheet" href="asset/style/Info-HTML.css" />
 </head>
 
 <body>
@@ -89,11 +89,11 @@
                 pour créer des pages web. Il décrit la structure d'une page web et permet d'intégrer du contenu
                 comme du texte, des images, des vidéos et des liens hypertextes.</p>
 
-<br>
+            <br>
 
             <h3>Structure de base d'un document HTML</h3>
 
-<br>
+            <br>
 
             <div class="card">
                 <div class="content">
@@ -190,11 +190,103 @@
                 mieux comprendre la structure de votre page.</p>
         </section>
 
+        <!-- Formulaires HTML -->
+        <section id="forms" class="section">
+            <h2 class="section-title">Formulaires HTML</h2>
+            <p class="section-subtitle">Collectez des données utilisateur</p>
+
+            <div class="card">
+                <div class="content">
+                    <p>Les formulaires permettent aux utilisateurs d'interagir avec votre site web en soumettant des
+                        données.</p>
+
+                    <h3>Éléments de formulaire courants</h3>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-row">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" placeholder="Votre nom">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="votre@email.com">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="country">Pays</label>
+                                <select id="country">
+                                    <option value="">Sélectionnez un pays</option>
+                                    <option value="fr">France</option>
+                                    <option value="be">Belgique</option>
+                                    <option value="ch">Suisse</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <label>
+                                    <input type="checkbox"> J'accepte les conditions d'utilisation
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn primary">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulaire-code" class="section">
+            <div class="card">
+                <div class="content">
+                    <h3>Formulaires HTML</h3>
+                    <p>
+                        
+                    </p>
+                    <div class="actions">
+                        <a href="#" class="btn primary">Exemples</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonnes pratiques -->
+        <section id="best-practices" class="section">
+            <h2 class="section-title">Bonnes pratiques HTML</h2>
+            <p class="section-subtitle">Codez efficacement et professionnellement</p>
+
+            <div class="card">
+                <div class="content">
+                    <h3>Conseils pour un HTML de qualité</h3>
+                    <ul>
+                        <li>Utilisez une structure sémantique appropriée</li>
+                        <li>Incluez toujours l'attribut <code>alt</code> pour les images</li>
+                        <li>Organisez votre code avec une indentation cohérente</li>
+                        <li>Validez votre code HTML avec le validateur W3C</li>
+                        <li>Assurez l'accessibilité avec des attributs ARIA si nécessaire</li>
+                        <li>Utilisez des commentaires pour documenter votre code</li>
+                        <li>Séparez le contenu (HTML) de la présentation (CSS) et du comportement (JavaScript)</li>
+                    </ul>
+
+                    <h3>Accessibilité</h3>
+                    <p>L'accessibilité web consiste à créer des sites utilisables par tous, y compris les personnes en
+                        situation de handicap. Utilisez des balises sémantiques, des attributs ARIA, et assurez une
+                        navigation au clavier fonctionnelle.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 — Portfolio de Milann 
+            <p>© 2025 — Portfolio de Milann
             </p>
         </div>
     </footer>

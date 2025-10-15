@@ -448,8 +448,8 @@ input:focus, textarea:focus{
 }
 
 .profile-pic {
-  width: 4rem;
-  height: 4 rem;
+  width: 2.5rem;
+  height: 2.5 rem;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #d16ba5;

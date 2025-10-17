@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-// Rendre toutes les cartes visibles une fois le DOM chargé (au cas où IntersectionObserver ne fonctionne pas)
+// Rendre toutes les cartes visibles une fois le DOM chargé (au cas ou IntersectionObserver ne fonctionn pas)
 document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.card');
   cards.forEach(card => card.classList.add('visible'));
@@ -59,7 +59,7 @@ contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Afficher un message de chargement
-    formStatus.textContent = 'Envoi en cours...';
+    formStatus.textContent = '⏳ Envoi en cours...';
     formStatus.style.color = 'var(--muted)';
     
     // Récupérer les données du formulaire
@@ -73,7 +73,7 @@ contactForm.addEventListener('submit', function(e) {
     emailjs.send("service_jh1yade", "template_4g6rna6", formData)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            formStatus.textContent = 'Message envoyé avec succès ! Merci.';
+            formStatus.textContent = '✅ Message envoyé avec succès';
             formStatus.style.color = '#4ade80';
             
             // Réinitialiser le formulaire

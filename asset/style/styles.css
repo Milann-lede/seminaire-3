@@ -249,16 +249,6 @@ body{
   box-shadow: 0 10px 20px rgba(255, 98, 192, 0.3);
 }
 
-#formulaire-code .card {
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
 /* Animation reveal */
 .card {
   opacity: 0;

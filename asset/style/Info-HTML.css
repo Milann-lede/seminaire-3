@@ -143,6 +143,7 @@ body{
 /* Contenu spécifique pour chaque logo */
 .tech-logo-item:nth-child(1)::after {
   content: "📄 En savoir plus sur HTML";
+  bottom: -45px; 
 }
 
 .tech-logo-item:nth-child(2)::after {
